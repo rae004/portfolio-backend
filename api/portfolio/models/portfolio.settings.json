@@ -32,6 +32,9 @@
     },
     "post_date": {
       "type": "date"
+    },
+    "seo_description": {
+      "type": "text"
     }
   }
 }
