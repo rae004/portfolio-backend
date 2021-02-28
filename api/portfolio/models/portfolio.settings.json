@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "portfolios",
   "info": {
-    "name": "portfolio"
+    "name": "portfolio",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -28,6 +29,9 @@
     "slug": {
       "type": "uid",
       "targetField": "Headline"
+    },
+    "post_date": {
+      "type": "date"
     }
   }
 }
