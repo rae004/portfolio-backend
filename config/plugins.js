@@ -1,12 +1,12 @@
-module.exports = ({ env }) => ({
+module.exports = () => ({
   upload: {
     provider: 'aws-s3',
     providerOptions: {
-      accessKeyId: 'AKIATMWFZZ4RQXXDN6VD',
-      secretAccessKey: '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',
+      accessKeyId: process.env.AWS_KEY_ID,
+      secretAccessKey: process.env.AWS_SECERT_ACCESS_KEY,
       region: 'us-east-2',
       params: {
-        Bucket: 'portfolio-strapi-cdn',
+        Bucket: process.env.AWS_S3_CDN_BUCKET,
       },
     },
   },
